@@ -1,4 +1,18 @@
 {
+  "rewrites": [
+    {
+      "source": "/.well-known/apple-app-site-association",
+      "destination": "/apple-app-site-association"
+    },
+    {
+      "source": "/listing/:id",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/reel/:id",
+      "destination": "/index.html"
+    }
+  ],
   "headers": [
     {
       "source": "/.well-known/apple-app-site-association",
@@ -8,16 +22,15 @@
           "value": "application/json"
         }
       ]
-    }
-  ],
-  "rewrites": [
-    {
-      "source": "/listing/:id",
-      "destination": "/index.html"
     },
     {
-      "source": "/reel/:id",
-      "destination": "/index.html"
+      "source": "/apple-app-site-association",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "application/json"
+        }
+      ]
     }
   ]
 }

@@ -1,0 +1,14 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appID": "HZ35J2AG79.com.beakericestudios.ReelEstate1",
+        "paths": [
+          "/listing/*",
+          "/reel/*"
+        ]
+      }
+    ]
+  }
+}
